@@ -1,6 +1,8 @@
+#!/bin/bash
+
 cd _build
 
-# Automake gets brought in unnecessarily for the release package - 
+# Automake gets brought in unnecessarily for the release package -
 # force dependencies to be 'up-to-date' to skip automake...
 touch aclocal.m4
 touch Makefile.in
@@ -18,4 +20,3 @@ echo "**BUILD STARTED**"
 make
 echo "**BUILD COMPLETE**"
 make install
-

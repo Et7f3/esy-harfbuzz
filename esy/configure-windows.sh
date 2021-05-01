@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd _build
 
 INSTALL_PATH="$(cygpath -u $cur__install)"
